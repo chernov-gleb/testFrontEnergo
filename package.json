@@ -2,13 +2,13 @@
   "name": "testEnergoFront",
   "version": "1.0.0",
   "description": "",
-  "main": "js/app.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chernov Gleb",
   "license": "ISC",
   "dependencies": {
     "csv-parser": "^3.0.0",

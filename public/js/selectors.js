@@ -72,7 +72,7 @@ var selectorSortElements = {
                 return 1
             return 0
         })
-        
+
         localStorage.clear()
         for(let i = 0; i <employee.length;i++){
             localStorage.setItem(''+i, JSON.stringify(employee[i]))
