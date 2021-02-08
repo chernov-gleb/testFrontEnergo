@@ -33,7 +33,8 @@ function Selectors() {
     this.onSelectorDblClick = function (e, el){
         var selectedIndex = el.options.selectedIndex;
         var createEmp = JSON.parse(localStorage.getItem(''+selectedIndex))
-
+        var createSelect = new Selectors();
+        createSelect.deleteEmployee('#employeeSelector');
         employeeLoader.loadNewEmployee(createEmp, '#edit-');
     }
 }
