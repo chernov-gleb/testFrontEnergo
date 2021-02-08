@@ -1,0 +1,141 @@
+.tabContent{
+
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 20px;
+    animation: fadeEffect 1s;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: lightsteelblue;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: aliceblue;
+}
+
+.main-menu .input-block{
+    display: inline-block;
+}
+
+.main-menu .input-blocks .error-input{
+    border: 1px solid #ff0000;
+}
+
+.main-menu .input-blocks .input-block{
+    padding: 10px;
+}
+
+.main-menu .input-blocks .input-block label{
+    display: block;
+}
+.edit-menu table{
+    margin: auto
+}
+
+.edit-menu .list-menu{
+    border: 1px solid #ff0000;
+    display: inline-block;
+}
+.edit-menu .input-blocks .error-input{
+    border: 1px solid #ff0000;
+}
+
+.edit-menu .input-blocks .input-block{
+    padding: 10px;
+}
+
+.edit-menu .input-blocks .input-block label{
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.open-button {
+    background-color: #2196F3;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.form-popup {
+    display: none;
+    margin: 0 auto;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #1976D2;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-container .cancel {
+    background-color: #448AFF;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}

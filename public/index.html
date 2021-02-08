@@ -1,0 +1,113 @@
+
+
+<html lang = ru>
+    <head>
+        <meta charset="utf-8">
+        <script src="js/selectors.js"></script>
+    </head>
+    <div id = "tab-menu" class="tab">
+        <button id = "mainButton" class="tabLinks active">main</button>
+        <button id = "editButton" class="tabLinks">edit</button>
+    </div>
+    <div id = "main-menu" class="tabContent active">
+        <div class="main-menu">
+            <div id = "input-menu1" class="input-blocks">
+                New Employe
+                <div class = "input-block">
+                    <label>Name*</label>
+                    <input type = "text" name = "firstName" class = "checkable" title = "Введите Имя" id="input-firstName" />
+                </div>
+                <div class = "input-block">
+                    <label>Last Name*</label>
+                    <input type = "text" name = "lastName" class = "checkable" title = "Введите Фамилию" id="input-lastName" />
+                </div>
+                <div class = "input-block">
+                    <label>Fathers Name</label>
+                    <input type = "text" name = "fatherName" title = "Введите Отчество" id="input-fatherName" />
+                </div>
+                <div class = "input-block">
+                    <label>Position</label>
+                    <input type = "text" name = "pos" title = "Введите Должность" id="input-pos" />
+                </div>
+                <div class = "input-block">
+                    <label>Birth Date</label>
+                    <input type = "date" name = "bDate" title = "Введите Дату Рождения" id="input-bDate" />
+                </div>
+                <div class = "input-block">
+                    <label>Telephone Number*</label>
+                    <input type = "tel" name = "tel" class = "checkable" title = "Введите телефонный номер" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="+7-999-999-99-99" id="input-tel" />
+                </div>
+                <div class = "input-block">
+                    <label>E-mail*</label>
+                    <input type = "text" name = "mail" class = "checkable" title = "Введите электронный адрес" id="input-mail" />
+                </div>
+
+                <button  id="saveButton">Save</button>
+                <button  id="loadButton" style="display: none">Load</button>
+                <button  id="deleteButton" style="display: none">Delete</button>
+                <button  id="SortName"style="display: none">Sort by name</button>
+                <button  id="SortPos"style="display: none">Sort by position</button>            </div>
+        </div>
+
+    </div>
+    <div id = "edit-menu" class="tabContent">
+        <div class="edit-menu">
+            <table>
+                <tbody>
+                <tr>
+
+                    <td align="top" >
+                        <button  id="deleteButton">Delete</button>
+                        <button  id="SortName">Sort by name</button>
+                        <button  id="SortPos">Sort by position</button>
+                        <select name="select" multiple="multiple" id = "employeeSelector">
+
+                        </select>
+                    </td>
+                    <td align="center">
+                        <div id = "input-menu2" class="input-blocks">
+                            Edit Employe
+                            <div class = "input-block">
+                                <label>Name*</label>
+                                <input type = "text" name = "firstName" class = "checkable" title = "Введите Имя" id="edit-firstName" />
+                            </div>
+                            <div class = "input-block">
+                                <label>Last Name*</label>
+                                <input type = "text" name = "lastName" class = "checkable" title = "Введите Фамилию" id="edit-lastName" />
+                            </div>
+                            <div class = "input-block">
+                                <label>Fathers Name</label>
+                                <input type = "text" name = "fatherName" title = "Введите Отчество" id="edit-fatherName" />
+                            </div>
+                            <div class = "input-block">
+                                <label>Position</label>
+                                <input type = "text" name = "pos" title = "Введите Должность" id="edit-pos" />
+                            </div>
+                            <div class = "input-block">
+                                <label>Birth Date</label>
+                                <input type = "date" name = "bDate" title = "Введите Дату Рождения" id="edit-bDate" />
+                            </div>
+                            <div class = "input-block">
+                                <label>Telephone Number*</label>
+                                <input type = "tel" name = "tel" class = "checkable" title = "Введите телефонный номер" id="edit-tel" />
+                            </div>
+                            <div class = "input-block">
+                                <label>E-mail*</label>
+                                <input type = "text" name = "mail" class = "checkable" title = "Введите электронный адрес" id="edit-mail" />
+                            </div>
+                            <button  id="saveButton">Save</button>
+                            <button  id="loadButton">Load</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/models/employee.js"></script>
+    <script type="text/javascript" src="../js/buttons.js"></script>
+    <script type="text/javascript" src="../js/selectors.js"></script>
+    <script type="text/javascript" src="../js/tabs.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</html>
