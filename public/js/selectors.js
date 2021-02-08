@@ -64,8 +64,6 @@ var selectorSortElements = {
             employee[i] = JSON.parse(localStorage.getItem(''+i))
             el.options[0] = null;
         }
-
-        console.log(employee)
         employee.sort(function(a, b){
             var nameA=a.lastName.toLowerCase(), nameB=b.lastName.toLowerCase()
             if (nameA < nameB)
@@ -74,8 +72,7 @@ var selectorSortElements = {
                 return 1
             return 0
         })
-
-        console.log(employee)
+        
         localStorage.clear()
         for(let i = 0; i <employee.length;i++){
             localStorage.setItem(''+i, JSON.stringify(employee[i]))
@@ -90,7 +87,6 @@ var selectorSortElements = {
             employee[i] = JSON.parse(localStorage.getItem(''+i))
             el.options[0] = null;
         }
-
         employee.sort(function(a, b){
             var nameA=a.pos.toLowerCase(), nameB=b.pos.toLowerCase()
             if (nameA < nameB)
